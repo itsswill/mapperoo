@@ -1,0 +1,21 @@
+{
+  "/api/*": {
+    "target":"http://maps.googleapis.com/",
+    "secure":false,
+    "logLevel":"debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  },
+
+  "/secured/*": {
+    "target":"https://maps.googleapis.com/",
+    "secure":false,
+    "logLevel":"debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/secured": ""
+    }
+  }
+}
